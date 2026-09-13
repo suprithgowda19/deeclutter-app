@@ -1,0 +1,7 @@
+{
+  "git.repositoryScanMaxDepth": 1,
+  "git.ignoredRepositories": [
+    "frontend/mobile",
+    "c:/Users/ST/Desktop/mcware/deeclutter-app/frontend/mobile"
+  ]
+}
