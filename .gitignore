@@ -1,0 +1,136 @@
+# ==============================================================================
+# Unified .gitignore for Deeclutter App
+# Root level configuration for Laravel (Backend), Web (React), and Mobile (Expo)
+# ==============================================================================
+
+# ------------------------------------------------------------------------------
+# Operating System & IDEs
+# ------------------------------------------------------------------------------
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+desktop.ini
+
+.idea/
+.vscode/*
+!.vscode/extensions.json
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+*.bak
+
+# ------------------------------------------------------------------------------
+# Logs & Temporary Files
+# ------------------------------------------------------------------------------
+*.log
+logs/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+# ------------------------------------------------------------------------------
+# Environment Variables & Secrets (Global)
+# ------------------------------------------------------------------------------
+.env
+.env.backup
+.env.production
+.env.local
+.env.*.local
+*.env
+!*.env.example
+
+# ------------------------------------------------------------------------------
+# JavaScript / TypeScript / Node.js (Web & Mobile)
+# ------------------------------------------------------------------------------
+node_modules/
+**/node_modules/
+dist/
+**/dist/
+dist-ssr/
+**/dist-ssr/
+build/
+**/build/
+web-build/
+**/web-build/
+.cache/
+.parcel-cache/
+.turbo/
+*.tsbuildinfo
+
+# ------------------------------------------------------------------------------
+# Expo & React Native (Mobile)
+# ------------------------------------------------------------------------------
+.expo/
+**/.expo/
+*.jks
+*.p8
+*.p12
+*.key
+*.mobileprovision
+*.orig.*
+
+# Android native build output
+**/android/app/build/
+**/android/.gradle/
+**/android/build/
+
+# iOS native build output
+**/ios/Pods/
+**/ios/build/
+
+# ------------------------------------------------------------------------------
+# Laravel Framework (Backend)
+# ------------------------------------------------------------------------------
+**/backend/vendor/
+vendor/
+
+# Laravel Storage & Cache
+**/storage/*.key
+**/storage/pail/
+**/storage/framework/cache/data/*
+!**/storage/framework/cache/data/.gitignore
+**/storage/framework/sessions/*
+!**/storage/framework/sessions/.gitignore
+**/storage/framework/views/*
+!**/storage/framework/views/.gitignore
+**/storage/framework/testing/*
+!**/storage/framework/testing/.gitignore
+**/storage/logs/*.log
+!**/storage/logs/.gitignore
+**/storage/app/public/*
+!**/storage/app/public/.gitignore
+**/storage/app/private/*
+!**/storage/app/private/.gitignore
+
+# Laravel Bootstrap Cache
+**/bootstrap/cache/*.php
+!**/bootstrap/cache/.gitignore
+
+# Laravel Public Assets & Hot Reloading
+**/public/build/
+**/public/hot
+**/public/storage
+**/public/fonts-manifest.dev.json
+
+# PHPUnit & Testing Caches
+.phpunit.result.cache
+**/.phpunit.result.cache
+.phpunit.cache
+**/.phpunit.cache
+
+# Tooling & IDE helpers
+.phpactor.json
+Homestead.json
+Homestead.yaml
+auth.json
+_ide_helper.php
+_ide_helper_models.php
+.phpstorm.meta.php
