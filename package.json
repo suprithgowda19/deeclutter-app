@@ -1,0 +1,17 @@
+{
+  "name": "deeclutter-app",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Deeclutter App - Fullstack monorepo with Laravel, React Web, and React Native Expo",
+  "scripts": {
+    "dev": "concurrently --kill-others-on-fail --prefix \"[{name}]\" --names \"backend,web,mobile\" --prefix-colors \"blue.bold,cyan.bold,green.bold\" \"npm run dev:backend\" \"npm run dev:web\" \"npm run dev:mobile\"",
+    "dev:web-only": "concurrently --kill-others-on-fail --prefix \"[{name}]\" --names \"backend,web\" --prefix-colors \"blue.bold,cyan.bold\" \"npm run dev:backend\" \"npm run dev:web\"",
+    "dev:mobile-only": "concurrently --kill-others-on-fail --prefix \"[{name}]\" --names \"backend,mobile\" --prefix-colors \"blue.bold,green.bold\" \"npm run dev:backend\" \"npm run dev:mobile\"",
+    "dev:backend": "cd backend && php artisan serve --port=8000",
+    "dev:web": "npm --prefix frontend/web run dev",
+    "dev:mobile": "npm --prefix frontend/mobile run start"
+  },
+  "devDependencies": {
+    "concurrently": "^9.1.2"
+  }
+}
